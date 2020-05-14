@@ -60,6 +60,12 @@ for index, row in naboDF.iterrows():
     if row['Miercoles PM']:
         archipielagoData['islands'][row['Isla']
                                     ]['timeline']['Wednesday_PM'] = row['Miercoles PM']
+    if row['Jueves AM']:
+        archipielagoData['islands'][row['Isla']
+                                    ]['timeline']['Thursday_AM'] = row['Jueves AM']
+    if row['Jueves PM']:
+        archipielagoData['islands'][row['Isla']
+                                    ]['timeline']['Thursday_PM'] = row['Jueves PM']
 
 jsonDataTurnips = json.dumps(archipielagoData)
 islands = archipelago.Archipelago.load_json(jsonDataTurnips)
