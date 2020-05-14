@@ -152,3 +152,4 @@ $RECYCLE.BIN/
 client_id.json
 google_secret.json
 creds2.json
+.vscode/
